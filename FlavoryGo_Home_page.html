@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zomato</title>
+    
+
+</head>
+
+
+ 
+<style type="text/css">
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    body{
+        margin: 0;
+        padding: 0;
+        font-family: 'Kanit', sans-serif;
+        font-size: 24px;
+        text-shadow: 4px 4px 4px #aaa;
+    }
+ 
+ @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
+    
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+	li,a,button{
+    		font-family: "Monsterrat", sans-serif;
+    		font-weight: 500;
+    		font-size: 16px;
+    		color: black; 
+    		text-decoration: none;
+	}
+	
+    a:hover{
+    color: yellow;
+}
+
+
+	header{
+    		display: flex;
+    		justify-content: flex-between;
+    		align-items: center;
+    		padding: 15px 10%;
+    		height: 200px;
+		background-color: red;
+        	height: 60px;
+	}
+
+ 
+    h2{
+        display: inline;
+        color:black;
+        font-size: 40px;
+        margin-left: 10px;
+    }
+ 
+    ul, li{
+        display: inline;
+        color: white;
+        font-size: 22px;
+        margin: 60px;
+    }
+ 
+    ul{
+        float: right;
+    }
+ 
+    #bg{
+        height: 400px;
+        background-color: orange;
+        background-image: url('https://media.istockphoto.com/id/1364207865/photo/close-up-image-of-unrecognisable-person-using-serving-slicer-to-lift-pizza-margherita-slice.jpg?s=1024x1024&w=is&k=20&c=Jn8JABSlp33dnK4a8SkmObjMb_EUierNFbO0g_YO85w=');
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+    }
+
+    .creator{
+        background-color: yellow;
+        font-size: 15px;
+        
+    }
+
+    #container{
+        border:1px solid black;
+        background-color: crimson;
+        max-width: 1400px;
+        margin:auto;
+    }
+
+    .card{
+        border:1px solid black;
+        background-color:crimson;
+        float: right;
+        width: 25%;
+    }
+
+    .card h2{
+        color:black;
+        margin: 10px;
+    }
+    .card body{
+        padding: 10px;
+        text-align: center;
+    }
+
+    .card button{
+        width:100%;
+        background-color: red;
+        color:white;
+        height: :40px;
+        font-size: 18px;
+        border-radius: 30px;
+    }
+
+    .card button:hover{
+        background-color: greenyellow;
+        color:black;
+        cursor:pointer;
+    }
+
+    .card img{
+        width: 100%;
+    }
+
+    .card-body{
+        padding: 10px;
+        text-align: center;
+    }
+
+    
+
+
+
+
+    @media (max-width: 720px) {
+        .card{
+         width: 97%;
+         margin: 5px;
+         background-color: aqua;
+        }
+    }
+
+    @media (max-width: 1023px) and (min-width: 721px) {
+
+        .card{
+             width: 48%;
+             margin: 5px;
+            background-color: greenyellow;
+        }
+    }
+
+
+
+ 
+</style>
+<body>
+
+ <!--Navbar-->
+    <header>
+     <!-- <img class="logo" src="/static/Home_Page_logo.png">-->
+            <h4><italic>FlavoryGo<italic></h4>
+	
+
+ 
+       
+              <nav>
+		<ul class=>
+			<li>Home</li>
+            		<li>Resturants</li>
+            		<li>About</li>
+            		<li>Contact</li>
+                </ul>
+            </nav>
+             
+            <form class="d-flex" role="search">
+                <input class="search" type="search" placeholder="Search" aria-label="Search">
+                <button class="search_btn" type="submit">Search</button>
+              </form>
+               
+    </header>
+    <marquee class="creator" >Base your meals on higher fibre starchy carbohydrates&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;                     
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Eat lots of fruit and veg        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Eat more fish, including a portion of oily fish          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Cut down on saturated fat and sugar                             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Eat less salt: no more than 6g a day for adults     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+                                            </marquee>
+   
+    <!--Navbar-->
+     
+    <div class="carousel slide">
+
+        
+      <div class="mySlides fade">
+        
+ 
+              <img src="D:\HTML\FlavoryGo_Food_delivery\cake.jpg" style=" height:400px; width:100% " alt="MY Image 1">
+          <div class="text"><h4></h4></div>
+      </div>
+    
+      <div class="mySlides fade">
+          
+       
+            <img src="D:\HTML\FlavoryGo_Food_delivery\pizza.jpg"" style="height:400px;width:100% " alt="My Image 2">
+              <div class="text"><h4></h4></div>
+      </div>
+    
+    
+      <div class="mySlides fade">
+     
+            <img src="D:\HTML\FlavoryGo_Food_delivery\soft_drink.jpg" style="height:400px; width:100%" alt="My Image 3">
+              <div class="text"><h4></h4></div>
+      </div>
+    
+      
+
+    </div>
+    <br>
+    
+       <div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+   </div>
+    <script>
+    let slideIndex = 0;
+    showSlides();
+    
+    function showSlides() {
+        let i;
+        let slides = document.getElementsByClassName("mySlides");
+        for (i = 0; i < slides.length; i++) {
+              slides[i].style.display = "none";
+        }
+          slideIndex++;
+        if (slideIndex > slides.length) {slideIndex = 1}
+          slides[slideIndex-1].style.display = "block";
+            setTimeout(showSlides, 2000); // Change image every 2 seconds
+    }
+  </script>
+  </div>
+         
+    
+    <div id="container">
+        <h1>Resturants near me</h1>
+    
+        <div class="card">
+          <div class="card-body">
+           <img src="https://media.istockphoto.com/id/1364207865/photo/close-up-image-of-unrecognisable-person-using-serving-slicer-to-lift-pizza-margherita-slice.jpg?s=1024x1024&w=is&k=20&c=Jn8JABSlp33dnK4a8SkmObjMb_EUierNFbO0g_YO85w=">
+           <h2>Dominos Pizza</h2> 
+           <button>View Menu</button> 
+        </div>
+        </div>
+
+
+        <div class="card">
+            <div class="card-body">
+             <img src="https://images.pexels.com/photos/6260921/pexels-photo-6260921.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1">
+             <h2>Habib's Biriyani</h2> 
+             <button>View Menu</button> 
+          </div>
+          </div>
+
+
+          <div class="card">
+            <div class="card-body">
+             <img src="https://images.pexels.com/photos/70497/pexels-photo-70497.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1">
+             <h2>Burger King</h2> 
+             <button>View Menu</button> 
+          </div>
+          </div>
+
+          <div class="card">
+            <div class="card-body">
+             <img src="https://images.pexels.com/photos/1291712/pexels-photo-1291712.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1">
+             <h2>MIO AMORE</h2> 
+             <button>View Menu</button> 
+          </div>
+          </div>
+
+
+          <div class="card">
+            <div class="card-body">
+             <img src="https://images.pexels.com/photos/3926123/pexels-photo-3926123.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1">
+             <h2>WOW MOMO</h2> 
+             <button>View Menu</button> 
+          </div>
+          </div>
+
+
+          <div class="card">
+            <div class="card-body">
+             <img src="https://media.istockphoto.com/id/1215178290/photo/stir-fry-noodles-with-vegetables-and-beef-in-black-bowl-slate-background-close-up.jpg?s=1024x1024&w=is&k=20&c=x5UcGxuMpuFZj2fhivpQ73rddBCm_Zyoz6kJNe4EKKg=">
+             <h2>CHOWMAN</h2> 
+             <button>View Menu</button> 
+          </div>
+          </div>
+
+          <div class="card">
+            <div class="card-body">
+             <img src="https://images.pexels.com/photos/1146760/pexels-photo-1146760.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1">
+             <h2>PIZZA HUT</h2> 
+             <button>View Menu</button> 
+          </div>
+          </div>
+
+          <div class="card">
+            <div class="card-body">
+             <img src="https://media.istockphoto.com/id/1364207865/photo/close-up-image-of-unrecognisable-person-using-serving-slicer-to-lift-pizza-margherita-slice.jpg?s=1024x1024&w=is&k=20&c=Jn8JABSlp33dnK4a8SkmObjMb_EUierNFbO0g_YO85w=">
+             <h2>Dominos Pizza</h2> 
+             <button>View Menu</button> 
+          </div>
+          </div>
+          
+          <div class="card">
+            <div class="card-body">
+             <img src="https://images.pexels.com/photos/1362534/pexels-photo-1362534.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1">
+             <h2>ICE CREAM</h2> 
+             <button>View Menu</button> 
+          </div>
+          </div>
+    </div>
+ 
+ 
+ 
+ 
+</body>
+</html>
